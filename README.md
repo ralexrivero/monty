@@ -8,6 +8,7 @@ Monty. Realese date September 24, 2021
 * [Objetives](#Objetives)
 * [Environment](#Environment)
 * [Requirements](#Requirements)
+* [Commands](#Commands)
 * [Installation](#Installation)
 * [Compilation](#Compilation)
 * [Staff](#Staff)
@@ -110,6 +111,25 @@ it finds an error in the file
 an error occured
 If you can’t malloc anymore, print the error message Error: malloc failed, followed by a new line, and exit with status EXIT_FAILURE.
 Use only malloc and free and are not allowed to use any other function from man malloc (realloc, calloc, …)
+
+## Commands
+
+- push - Pushes an integer onto the stack.
+- pall - Prints all integers on the stack, starting at the top.
+- pint - Prints the integer at the top of the stack.
+- pop - Removes top element of stack.
+- swap - Swaps top two elements of the stack.
+- add - Add top two elements of the stack, remove them, and push result onto stack.
+- sub - Subtract top two elements of the stack, remove them, and push result onto stack.
+- div - Integer divide top two elements of the stack, remove them, and push result onto stack.
+- mul - Multiply top two elements of the stack, remove them, and push result onto stack.
+- mod - Integer division remainder top two elements, remove them, push result onto stack.
+- pchar - Print the ascii character based on top integer in stack.
+- pstr - Print the ascii characters related to integers in stack until 0 or >255.
+- rotl - Rotate stack. Top element becomes last. Second from top becomes top.
+- rotr - Rotate stack. Last element becomes top, Top element becomes second from top.
+- stack - Changes mode to first in first out (the default behavior). Front of queue becomes top of stack.
+- queue - Changes mode to last in first out. Top of stack becomes front of queue.
 
 ## Installation
 
