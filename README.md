@@ -1,7 +1,7 @@
 # monty 0x19. C - Stacks, Queues - LIFO, FIFO
 Monty. Realese date September 24, 2021
-https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fralexrivero%2Fmonty
-
+<!--Share on Twitter -->
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fralexrivero%2Fmonty)](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fralexrivero%2Fmonty)
 
 ## Table of contents
 * [Description](#Description)
@@ -140,4 +140,4 @@ Ronald
 <br/>
 
 ## license
-https://img.shields.io/github/license/ralexrivero/monty
+<a href="LICENSE" target="_blank">  <img align="left" src="https://img.shields.io/github/license/ralexrivero/monty" alt="License | Apache"> </a>
