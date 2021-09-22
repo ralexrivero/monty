@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include <stdlib.h> /* exit status */
 
+/* prototypes */
+void readfile(FILE *fp);
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
