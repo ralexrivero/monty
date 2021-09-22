@@ -1,4 +1,10 @@
 #include "monty.h"
+/**
+ * main - main function
+ * @argc: count of arguments
+ * @argv: pointer to array containing the arguments
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
 
 int main(int argc, char *argv[])
 {
