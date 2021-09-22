@@ -2,5 +2,5 @@
 
 void readfile(FILE *fp)
 {
-	
+	(void)fp;
 }
