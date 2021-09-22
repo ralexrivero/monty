@@ -122,9 +122,35 @@ Use only malloc and free and are not allowed to use any other function from man 
 
 
 ## Commands
+	
+### The opcode push pushes an element to the stack.
 
-- push - Pushes an integer onto the stack.
-- pall - Prints all integers on the stack, starting at the top.
+- Usage: `push <int>` where `<int>` is an integer
+- if `<int>` is not an integer or if there is no argument given to push, print the error message `L<line_number>: usage: push integer`, followed by a new line, and exit with the status `EXIT_FAILURE`
+	- where is the line number in the file
+- Dont deal with overflows.
+- Use the atoi function
+
+### The pall opcode
+
+The opcode pall prints all the values on the stack, starting from the top of the stack.
+- Usage pall
+- Format: see example
+- If the stack is empty, don’t print anything
+
+```
+ralex@ubuntu:~/monty$ cat -e bytecodes/00.m
+push 1$
+push 2$
+push 3$
+pall$
+julien@ubuntu:~/monty$ ./monty bytecodes/00.m
+3
+2
+1
+ralex@ubuntu:~/monty$
+```
+
 - pint - Prints the integer at the top of the stack.
 - pop - Removes top element of stack.
 - swap - Swaps top two elements of the stack.
