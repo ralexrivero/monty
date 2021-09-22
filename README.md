@@ -58,8 +58,9 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 - Any error message must be printed on stderr
 - Use a set of tests
 - Monty byte code files
-
-Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
+- Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language.
+- There is not more than one instruction per line.
+- There can be any number of spaces before or after the opcode and its argument:
 
 ```
 ralex@ubuntu:~/monty$ cat -e bytecodes/000.m
@@ -74,6 +75,7 @@ push 4$
 pall$
 ralex@ubuntu:~/monty$
 ```
+
 - Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
 
 ```
@@ -95,21 +97,25 @@ $
 pall This is the end of our program. Monty is awesome!$
 ralex@ubuntu:~/monty$
 ```
+
 ### The monty program
 
 Usage: monty file
-where file is the path to the file containing Monty byte code
+where file is the path to the file containing Monty byte code.
+
 If the user does not give any file or more than one argument to your program, print the error message USAGE: monty file, followed by a new line, and exit with the status EXIT_FAILURE
-If, for any reason, it’s not possible to open the file, print the error message Error: Can't open file <file>, followed by a new line, and exit with the status EXIT_FAILURE
-where <file> is the name of the file
-If the file contains an invalid instruction, print the error message L<line_number>: unknown instruction <opcode>, followed by a new line, and exit with the status EXIT_FAILURE
-where is the line number where the instruction appears.
+
+If, for any reason, it’s not possible to open the file, print the error message Error: Can't open file <file>, followed by a new line, and exit with the status EXIT_FAILURE where <file> is the name of the file
+
+If the file contains an invalid instruction, print the error message L<line_number>: unknown instruction <opcode>, followed by a new line, and exit with the status EXIT_FAILURE where is the line number where the instruction appears.
+
 Line numbers always start at 1
+
 The monty program runs the bytecodes line by line and stop if either:
-it executed properly every line of the file
-it finds an error in the file
-an error occured
-If you can’t malloc anymore, print the error message Error: malloc failed, followed by a new line, and exit with status EXIT_FAILURE.
+it executed properly every line of the file it finds an error in the file an error occured
+
+If can’t malloc anymore, print the error message Error: malloc failed, followed by a new line, and exit with status EXIT_FAILURE.
+
 Use only malloc and free and are not allowed to use any other function from man malloc (realloc, calloc, …)
 <!-- github -->
 <a href="http://montyscoconut.github.io/#:~:text=The%20Monty%20programming%20language%20Monty%20is%20a%20language,close%20the%20gap%20between%20scripting%20and%20programming%20languages." target="_blank"> The Monty programming language</a>
@@ -136,9 +142,14 @@ Use only malloc and free and are not allowed to use any other function from man 
 
 ## Installation
 
+- Clone this repository: `git clone "https://github.com/ralexrivero/monty.git"`
+- Change directories into the repository: `cd monty`
+- Compile 
+- run the file `./monty`
+
 ## Compilation
 
-$ gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty
+`gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty`
 
 ## Staff
 Andres & Ronald
