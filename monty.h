@@ -10,11 +10,6 @@
 
 #define DELIM "\t\n $"
 
-/* prototypes */
-void readfile(FILE *fp);
-bool push_validate(char *push_value, int line_n);
-int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number)
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -45,9 +40,14 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/* prototypes */
+void readfile(FILE *fp);
+bool push_validate(char *push_value, int line_n);
+int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number);
+
 /* function prototypes for opcodes */
-void push(stack_t **stack);
-size_t pall(const stack_t *stack);
+void push(stack_t **stack, unsigned int line, int push_int);
+void pall(stack_t **stack, unsigned int line);
 void pint(stack_t **stack, unsigned int line);
 void pop(stack_t **stack, unsigned int line);
 

@@ -1,0 +1,30 @@
+#include "monty.h"
+
+void push(stack_t **stack, unsigned int line, int push_value)
+{
+	(void)stack;
+/* 	(void)line;
+	(void)push_value; */
+	printf("push: stack:  ,line: %d ,push_value:%d\12", line, push_value);
+}
+
+void pall(stack_t **stack, unsigned int line)
+{
+	(void)stack;
+/* 	(void)line; */
+	printf("pall: stack:  ,line: %d\12", line);
+}
+
+void pint(stack_t **stack, unsigned int line)
+{
+	(void)stack;
+/* 	(void)line; */
+	printf("pint: stack:  ,line: %d\12", line);
+}
+
+void pop(stack_t **stack, unsigned int line)
+{
+	(void)stack;
+/* 	(void)line; */
+	printf("pop: stack:  ,line: %d\12", line);
+}

@@ -24,10 +24,9 @@ void readfile(FILE *fp)
 			if (push_validate(push_value, line_n) == true)
 			{
 				push_int = atol(push_value);
-				push()
+				push(&stack, line_n, push_int);
 				
 			}
-			
 		}
 		else
 		{
