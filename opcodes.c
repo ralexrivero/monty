@@ -7,6 +7,8 @@ int i = 0;
 instruction_t opcode_list[] = {
 	{"push", push},
 	{"pall", pall},
+	{"pint",pint},
+	{"pop",pop},
 	{NULL, NULL}
 };
 

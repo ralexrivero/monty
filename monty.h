@@ -43,8 +43,10 @@ typedef struct instruction_s
 } instruction_t;
 
 /* function prototypes for opcodes */
-/* void push(stack_t **stack, unsigned int line);
-size_t pall(const stack_t *stack); */
-void push(stack_t **stack, unsigned int line, char *arg);
-void pall(stack_t **stack, unsigned int line);
+
+void push(stack_t **stack, unsigned int line);
+size_t pall(const stack_t *stack);
+void pint(stack_t **stack, unsigned int line);
+void pop(stack_t **stack, unsigned int line);
+
 #endif /* MONTY_H */
