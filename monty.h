@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <string.h>
 
-#define DELIM "\t\n "
+#define DELIM "\t\n $"
 
 /* prototypes */
 void readfile(FILE *fp);

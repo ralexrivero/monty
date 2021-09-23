@@ -16,5 +16,14 @@ void readfile(FILE *fp)
 	{
 		line_n++;
 		opcode = strtok(buffer, DELIM);
+		printf("%d : %s\12", line_n, opcode);
+		if (strcmp(opcode,"push") == 0)
+		{
+			printf("found push, get_int\12");
+		}
+		else
+		{
+			printf("get_opcode\12");
+		}
 	}
 }
