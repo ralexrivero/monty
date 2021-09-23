@@ -3,10 +3,31 @@
 /**
  * push - Adds a new node at the beginning of a stack_t list.
  * @stack: pointer to stack
+ * @line: Line number
+ * @n: line arguments
  */
-void push(stack_t **stack)
+void push(stack_t **stack, unsigned int line, char *n)
 {
 	stack_t *new_node;
+	unsigned int a = 0;
+	
+	if (n == NULL)
+	{
+		printf("L%d: usage: push integer\n", line);
+		exit(EXIT_FAILURE);
+	}
+
+	while(n[a] != '\0')
+	{
+		if (n[0] == '-' && i == 0)
+			continue;
+		if (isdigit(n[a]) == 0)
+		{
+			printf("L%d: usage: push integer\n", line);
+			exit(EXIT_FAILURE);
+		}
+		a++;
+	}
 
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
@@ -14,10 +35,13 @@ void push(stack_t **stack)
 		printf("Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
-	new_node->next = *stack;
-	new_node->prev = NULL;
+	new_node->n = atoi(n);
 	if (*stack)
+	{
 		(*stack)->prev = new_node;
+		new_node->next = *stack;
+		new_node->prev = NULL;
+	}
 	*stack = new_node;
 }
 
