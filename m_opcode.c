@@ -7,8 +7,9 @@
  */
 void push(stack_t **stack, unsigned int line, int push_value)
 {
-	(void)line;
 	stack_t *new_node;
+
+	(void)line;
 
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
@@ -49,8 +50,9 @@ void pall(stack_t **stack, unsigned int line)
  */
 void pint(stack_t **stack, unsigned int line)
 {
-	(void)line;
 	int value;
+
+	(void)line;
 
 	if (!stack || !*stack)
 	{
@@ -67,9 +69,10 @@ void pint(stack_t **stack, unsigned int line)
  */
 void pop(stack_t **stack, unsigned int line)
 {
-	(void)line;
 	stack_t *tmp = *stack;
 
+	(void)line;
+	
 	if (*stack == NULL || stack == NULL)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n", line);

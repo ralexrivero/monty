@@ -8,7 +8,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-#define DELIM "\t\n $"
+#define DELIM "\t\n "
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
