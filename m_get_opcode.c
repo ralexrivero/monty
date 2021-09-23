@@ -15,7 +15,6 @@ instruction_t opcode_list[] = {
 	{"pall", pall},
 	{"pint", pint},
 	{"pop", pop},
-	{NULL, NULL}
 };
 
 int size = sizeof(opcode_list) / sizeof(instruction_t) - 1;
