@@ -16,6 +16,5 @@ void readfile(FILE *fp)
 	{
 		line_n++;
 		opcode = strtok(buffer, DELIM);
-		printf("%s\12", opcode);
 	}
 }

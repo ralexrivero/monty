@@ -5,8 +5,8 @@ int opcode_search(const char *opcode, stack_t **stack, unsigned int line_number)
 int i = 0;
 
 instruction_t opcode_list[] = {
-	{"push", push},
-	{"pall", pall},
+/* 	{"push", push},
+	{"pall", pall}, */
 	{"pint",pint},
 	{"pop",pop},
 	{NULL, NULL}
@@ -19,7 +19,7 @@ while (i < size)
 	if (opcode_list[i].opcode == opcode)
 	{
 		opcode_list[i].f(stack, line_number);
-		return;
+		return (0);
 	}
 	fprintf(stderr, "no inst\n");
 	exit(EXIT_FAILURE);
