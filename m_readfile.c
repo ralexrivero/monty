@@ -25,12 +25,11 @@ void readfile(FILE *fp)
 			{
 				push_int = atol(push_value);
 				push(&stack, line_n, push_int);
-				
 			}
 		}
 		else
 		{
-			get_opcode(opcode, &stack,line_n);
+			get_opcode(opcode, &stack, line_n);
 		}
 	}
 }

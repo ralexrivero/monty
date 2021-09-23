@@ -46,7 +46,8 @@ bool push_validate(char *push_value, int line_n);
 int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number);
 
 /* function prototypes for opcodes */
-void push(stack_t **stack, unsigned int line, int push_int);
+
+void push(stack_t **stack, unsigned int line, int push_value);
 void pall(stack_t **stack, unsigned int line);
 void pint(stack_t **stack, unsigned int line);
 void pop(stack_t **stack, unsigned int line);
