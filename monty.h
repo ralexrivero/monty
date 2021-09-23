@@ -13,6 +13,7 @@
 /* prototypes */
 void readfile(FILE *fp);
 bool push_validate(char *push_value, int line_n);
+int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number)
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)

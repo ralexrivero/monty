@@ -1,5 +1,5 @@
 #include "monty.h"
-int opcode_search(const char *opcode, stack_t **stack, unsigned int line_number)
+int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number)
 {
 
 int i = 0;
