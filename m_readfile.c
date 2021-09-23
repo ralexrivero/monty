@@ -18,6 +18,12 @@ void readfile(FILE *fp)
 	{
 		line_n++;
 		opcode = strtok(buffer, DELIM);
+		/* if not exist opcode */
+		if (opcode == NULL)
+			continue;
+		/* if found the '#' char for comment code */
+		if (strchr(opcode, '#')!= NULL)
+			continue;
 		if (strcmp(opcode, "push") == 0)
 		{
 			push_value = strtok(NULL, DELIM);
