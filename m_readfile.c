@@ -6,9 +6,10 @@
 
 void readfile(FILE *fp)
 {
-	char *buffer = NULL;
+	char *buffer = NULL, *push_value = NULL;
 	size_t size = 0;
 	unsigned int line_n = 0; /* line number */
+	int push_int = 0;
 	char *opcode = NULL;
 
 /* invalid instruction print error messege */
@@ -16,10 +17,13 @@ void readfile(FILE *fp)
 	{
 		line_n++;
 		opcode = strtok(buffer, DELIM);
-		printf("%d : %s\12", line_n, opcode);
+		printf("%s >>", opcode);
 		if (strcmp(opcode,"push") == 0)
 		{
-			printf("found push, get_int\12");
+			push_value = strtok(NULL, DELIM);
+			if (push_validate(push_value, line_n) == true)
+			push_int = atol(push_value);
+			printf("int value to push: %d\12", push_int);
 		}
 		else
 		{

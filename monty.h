@@ -6,11 +6,13 @@
 #include <stdlib.h> /* exit status */
 #include <unistd.h>
 #include <string.h>
+#include <stdbool.h>
 
 #define DELIM "\t\n $"
 
 /* prototypes */
 void readfile(FILE *fp);
+bool push_validate(char *push_value, int line_n);
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
