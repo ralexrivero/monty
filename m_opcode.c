@@ -49,8 +49,16 @@ void pall(stack_t **stack, unsigned int line)
  */
 void pint(stack_t **stack, unsigned int line)
 {
-	(void)stack;
-	printf("pint: stack:  ,line: %d\12", line);
+	(void)line;
+	int value;
+
+	if (!stack || !*stack)
+	{
+		fprintf(stderr, "L%d: can't pint, stack empt\n", line);
+		exit(EXIT_FAILURE);
+	}
+	value = (*stack)->n;
+	printf("%d\n", value);
 }
 /**
  * pop - deletes the node at the top of te stack
@@ -59,6 +67,15 @@ void pint(stack_t **stack, unsigned int line)
  */
 void pop(stack_t **stack, unsigned int line)
 {
-	(void)stack;
-	printf("pop: stack:  ,line: %d\12", line);
+	(void)line;
+	stack_t *tmp = *stack;
+
+	if (*stack == NULL || stack == NULL)
+	{
+		fprintf(stderr, "L%d: can't pop an empty stack\n", line);
+		exit(EXIT_FAILURE);
+	}
+	tmp = (*stack)->next;
+	free(*stack);
+	*stack = tmp;
 }
