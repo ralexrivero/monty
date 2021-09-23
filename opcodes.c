@@ -2,18 +2,19 @@
 int opcode_search(const char *opcode)
 {
 
-opcode_t codes[] = {
+int i = 0;
+
+instruction_t opcode_list[] = {
     {"push", push},
     {"pall", pall},
-
     {NULL, NULL}
 };
 
-int size = sizeof(codes) / sizeof(opcode_t) - 1;
+int size = sizeof(opcode_list) / sizeof(instruction_t) - 1;
 
 while (i < size)
 {
-    if (codes[])
+    if (opcode_list[i].opcode == opcode)
 }
 return (EXIT_SUCCESS);
 }

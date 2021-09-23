@@ -1,3 +1,4 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty
+#-std=c90 no aplicado
+gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 ./monty
