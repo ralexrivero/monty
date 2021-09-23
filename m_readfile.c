@@ -18,7 +18,7 @@ void readfile(FILE *fp)
 	{
 		line_n++;
 		opcode = strtok(buffer, DELIM);
-		if (strcmp(opcode,"push") == 0)
+		if (strcmp(opcode, "push") == 0)
 		{
 			push_value = strtok(NULL, DELIM);
 			if (push_validate(push_value, line_n) == true)

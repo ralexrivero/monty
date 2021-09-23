@@ -2,14 +2,14 @@
 /**
  * push - Adds a new node at the beginning of a stack_t list.
  * @stack: pointer to stack
- * @line: Line number
+ * @line: line number of .m file
  * @push_value: value to push
  */
 void push(stack_t **stack, unsigned int line, int push_value)
 {
 	(void)line;
 	stack_t *new_node;
-	
+
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
 	{
@@ -28,6 +28,7 @@ void push(stack_t **stack, unsigned int line, int push_value)
 /**
  * pall - Function that prints all the elements of a stack_t list.
  * @stack: pointer to the head of the stack_t list
+ * @line: line number of .m file
  * Return: Number of nodes
  */
 void pall(stack_t **stack, unsigned int line)
@@ -49,7 +50,6 @@ void pall(stack_t **stack, unsigned int line)
 void pint(stack_t **stack, unsigned int line)
 {
 	(void)stack;
-/* 	(void)line; */
 	printf("pint: stack:  ,line: %d\12", line);
 }
 /**
@@ -60,6 +60,5 @@ void pint(stack_t **stack, unsigned int line)
 void pop(stack_t **stack, unsigned int line)
 {
 	(void)stack;
-/* 	(void)line; */
 	printf("pop: stack:  ,line: %d\12", line);
 }
