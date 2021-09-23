@@ -44,7 +44,6 @@ typedef struct instruction_s
 
 /* function prototypes for opcodes */
 
-void push(stack_t **stack, unsigned int line);
 size_t pall(const stack_t *stack);
 void pint(stack_t **stack, unsigned int line);
 void pop(stack_t **stack, unsigned int line);

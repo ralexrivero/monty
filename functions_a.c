@@ -3,16 +3,17 @@
 /**
  * push - Adds a new node at the beginning of a stack_t list.
  * @stack: pointer to stack
- * @line: line number
  */
-void push(stack_t **stack, unsigned int line)
+void push(stack_t **stack)
 {
 	stack_t *new_node;
 
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
+	{
 		printf("Error: malloc failed\n");
 		exit(EXIT_FAILURE);
+	}
 	new_node->next = *stack;
 	new_node->prev = NULL;
 	if (*stack)
