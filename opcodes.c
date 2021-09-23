@@ -14,10 +14,10 @@ int size = sizeof(opcode_list) / sizeof(instruction_t) - 1;
 
 while (i < size)
 {
-	if (opcode_list[i].opcode == opcode);
+	if (opcode_list[i].opcode == opcode)
 	{
 		opcode_list[i].f(stack, line_number);
-		return
+		return;
 	}
 	fprintf(stderr, "no inst\n");
 	exit(EXIT_FAILURE);
