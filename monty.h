@@ -51,5 +51,7 @@ void push(stack_t **stack, unsigned int line, int push_value);
 void pall(stack_t **stack, unsigned int line);
 void pint(stack_t **stack, unsigned int line);
 void pop(stack_t **stack, unsigned int line);
+void swap(stack_t **stack, unsigned int line);
+void nop(stack_t **stack, unsigned int line);
 
 #endif /* MONTY_H */

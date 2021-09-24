@@ -29,6 +29,5 @@ int main(int argc, char *argv[])
 	}
 	readfile(fp);
 	fclose(fp);
-/* 	freestack(); */
 	return (EXIT_SUCCESS);
 }
