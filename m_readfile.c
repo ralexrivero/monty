@@ -22,7 +22,7 @@ void readfile(FILE *fp)
 		if (opcode == NULL)
 			continue;
 		/* if found the '#' char for comment code */
-		if (strchr(opcode, '#')!= NULL)
+		if (strchr(opcode, '#') != NULL)
 			continue;
 		if (strcmp(opcode, "push") == 0)
 		{

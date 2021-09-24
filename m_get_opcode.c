@@ -15,6 +15,14 @@ instruction_t opcode_list[] = {
 	{"pall", pall},
 	{"pint", pint},
 	{"pop", pop},
+	{"pint", pint},
+	{"swap", swap},
+	{"nop", nop},
+	{"add", add},
+	{"sub", sub},
+	{"mul", mul},
+	{"_div", _div},
+	{"mod", mod},
 };
 
 int size = sizeof(opcode_list) / sizeof(instruction_t) - 1;
