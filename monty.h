@@ -41,21 +41,17 @@ typedef struct instruction_s
 } instruction_t;
 
 /**
- * struct glovar - struct for global vars of the Monty interpreter
- * @queue: flag for stack or queue
- * @stack_len: length of the stack
+ * struct glovar - global variable structs
+ * @n: integer
+ * @prev: points to the previous element of the stack (or queue)
+ * @next: points to the next element of the stack (or queue)
+ *
+ * Description: global variables for Monty project
  */
-typedef struct glovar
+struct glovar
 {
-	int queue;
-	size_t stack_len;
+	int stackorqueue;
 } glovar_t;
-
-#define STACK 0
-#define QUEUE 1
-
-/* global struct to hold flag for queue and stack length */
-extern glovar_t var;
 
 /* prototypes */
 void readfile(FILE *fp);
