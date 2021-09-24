@@ -40,6 +40,23 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct glovar - struct for global vars of the Monty interpreter
+ * @queue: flag for stack or queue
+ * @stack_len: length of the stack
+ */
+typedef struct glovar
+{
+	int queue;
+	size_t stack_len;
+} glovar_t;
+
+#define STACK 0
+#define QUEUE 1
+
+/* global struct to hold flag for queue and stack length */
+extern glovar_t var;
+
 /* prototypes */
 void readfile(FILE *fp);
 bool push_validate(char *push_value, int line_n);
