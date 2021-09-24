@@ -45,6 +45,7 @@ void readfile(FILE *fp);
 bool push_validate(char *push_value, int line_n);
 int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
+size_t lililen(stack_t **stack);
 /* function prototypes for opcodes */
 
 void push(stack_t **stack, unsigned int line, int push_value);
@@ -58,5 +59,7 @@ void sub(stack_t **stack, unsigned int line);
 void mul(stack_t **stack, unsigned int line);
 void _div(stack_t **stack, unsigned int line);
 void mod(stack_t **stack, unsigned int line);
+void f_rotl(stack_t **stack, unsigned int line);
+void f_rotr(stack_t **stack, unsigned int line);
 
 #endif /* MONTY_H */

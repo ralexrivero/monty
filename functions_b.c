@@ -7,9 +7,11 @@
  */
 void swap(stack_t **stack, unsigned int line)
 {
-	int first_tmp, second_tmp;
+	int first_tmp = 0, second_tmp = 0, len = 0;
 
-	if ((*stack)->next == NULL || (!*stack))
+	len = lililen(stack);
+
+	if (len < 2)
 	{
 		fprintf(stderr, "L%d: can't swap, stack too short\n", line);
 		exit(EXIT_FAILURE);
