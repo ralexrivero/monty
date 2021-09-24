@@ -74,5 +74,7 @@ void _div(stack_t **stack, unsigned int line);
 void mod(stack_t **stack, unsigned int line);
 void f_rotl(stack_t **stack, unsigned int line);
 void f_rotr(stack_t **stack, unsigned int line);
+void stack(stack_t **s, unsigned int n);
+void queue(stack_t **s, unsigned int n);
 
 #endif /* MONTY_H */

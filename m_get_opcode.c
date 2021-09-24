@@ -23,6 +23,8 @@ instruction_t opcode_list[] = {
 	{"mul", mul},
 	{"_div", _div},
 	{"mod", mod},
+	{"stack", stack},
+	{"queue", queue},
 };
 
 int size = sizeof(opcode_list) / sizeof(instruction_t) - 1;
