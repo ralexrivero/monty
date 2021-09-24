@@ -1,5 +1,6 @@
 #include "monty.h"
-/** swap - swaps the top two elements of the stack
+/**
+ * swap - swaps the top two elements of the stack
  * @stack: pointer to the head of stack
  * @line: line number
  * Return: Nothing on success, EXIT_FALURE if failure
