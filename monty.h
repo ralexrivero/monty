@@ -44,7 +44,7 @@ typedef struct instruction_s
 void readfile(FILE *fp);
 bool push_validate(char *push_value, int line_n);
 int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number);
-
+void free_stack(stack_t **stack);
 /* function prototypes for opcodes */
 
 void push(stack_t **stack, unsigned int line, int push_value);
