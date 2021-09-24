@@ -56,7 +56,7 @@ void nop(stack_t **stack, unsigned int line);
 void add(stack_t **stack, unsigned int line);
 void sub(stack_t **stack, unsigned int line);
 void mul(stack_t **stack, unsigned int line);
-void div(stack_t **stack, unsigned int line);
+void _div(stack_t **stack, unsigned int line);
 void mod(stack_t **stack, unsigned int line);
 
 #endif /* MONTY_H */

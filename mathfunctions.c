@@ -80,7 +80,7 @@ void mul(stack_t **stack, unsigned int line)
  * @stack: pointer to the head the stack
  * @line: line number
  */
-void div(stack_t **stack, unsigned int line)
+void _div(stack_t **stack, unsigned int line)
 {
 	int a, b, r;
 
@@ -112,7 +112,7 @@ void div(stack_t **stack, unsigned int line)
  */
 void mod(stack_t **stack, unsigned int line)
 {
-	int a, b, r
+	int a, b, r;
 
 	if ((*stack)->next == NULL || !(*stack))
 	{
@@ -124,7 +124,7 @@ void mod(stack_t **stack, unsigned int line)
 	b = (*stack)->next->n;
 	if (a == 0)
 	{
-		printf("L%d: division by zero\n", line_number);
+		fprintf(stderr, "L%d: division by zero\n", line);
 		exit(EXIT_FAILURE);
 	}
 
