@@ -76,7 +76,7 @@ void mul(stack_t **stack, unsigned int line)
 }
 
 /**
- * div - divides the top two elements of the stack
+ * _div - divides the top two elements of the stack
  * @stack: pointer to the head the stack
  * @line: line number
  */
