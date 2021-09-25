@@ -57,7 +57,7 @@ struct glovar
 void readfile(FILE *fp);
 bool push_validate(char *push_value, int line_n);
 int get_opcode(const char *opcode, stack_t **stack, unsigned int line_number);
-void free_stack(stack_t **stack);
+void free_stack(stack_t *stack);
 size_t lililen(stack_t **stack);
 /* function prototypes for opcodes */
 
