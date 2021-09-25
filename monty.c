@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "USAGE: monty file\12");
 		exit(EXIT_FAILURE);
 	}
-
 	/* asign file to the pointer fp */
 	fp = fopen(argv[1], "r");
 	if (!fp)
