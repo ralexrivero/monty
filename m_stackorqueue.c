@@ -5,11 +5,11 @@
  * @n: line num of .m
  *
  */
-void stack(stack_t **s, unsigned int n)
+void stk(stack_t **stack, unsigned int n)
 {
 	glovar_t.stackorqueue = 0;
 
-	(void) s;
+	(void) stack;
 	(void) n;
 }
 /**
@@ -18,10 +18,10 @@ void stack(stack_t **s, unsigned int n)
  * @n: line num of .m
  *
  */
-void queue(stack_t **s, unsigned int n)
+void que(stack_t **stack, unsigned int n)
 {
 	glovar_t.stackorqueue = 1;
 
-	(void) s;
+	(void) stack;
 	(void) n;
 }
