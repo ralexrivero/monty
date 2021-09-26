@@ -21,7 +21,7 @@ instruction_t opcode_list[] = {
 	{"add", add},
 	{"sub", sub},
 	{"mul", mul},
-	{"_div", _div},
+	{"div", _div},
 	{"mod", mod},
 	{"stack", stk},
 	{"queue", que},
