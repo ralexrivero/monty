@@ -4,7 +4,7 @@
  * @stack: double linked list head
  * @line: line of code of .m file
  **/
-void f_rotl(stack_t **stack, unsigned int line)
+void rotl(stack_t **stack, unsigned int line)
 {
 	stack_t *tmp, *new;
 	unsigned int temp;
@@ -39,7 +39,7 @@ void f_rotl(stack_t **stack, unsigned int line)
  * @stack: double linked list pointer to head
  * @line: line of code of .m file
  **/
-void f_rotr(stack_t **stack, unsigned int line)
+void rotr(stack_t **stack, unsigned int line)
 {
 	stack_t *tmp = NULL, *new = NULL;
 	int len = 0;

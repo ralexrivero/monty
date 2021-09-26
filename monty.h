@@ -46,7 +46,7 @@ typedef struct instruction_s
  * @prev: points to the previous element of the stack (or queue)
  * @next: points to the next element of the stack (or queue)
  *
- * Description: global variables for Monty project
+ * Description: global variables to switch mode
  */
 struct glovar
 {
@@ -72,9 +72,12 @@ void sub(stack_t **stack, unsigned int line);
 void mul(stack_t **stack, unsigned int line);
 void _div(stack_t **stack, unsigned int line);
 void mod(stack_t **stack, unsigned int line);
-void f_rotl(stack_t **stack, unsigned int line);
-void f_rotr(stack_t **stack, unsigned int line);
+void rotl(stack_t **stack, unsigned int line);
+void rotr(stack_t **stack, unsigned int line);
+void pchar(stack_t **stack, unsigned int n);
+void pstr(stack_t **stack, unsigned int n);
 void stk(stack_t **stack, unsigned int n);
 void que(stack_t **stack, unsigned int n);
+
 
 #endif /* MONTY_H */

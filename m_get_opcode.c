@@ -23,6 +23,10 @@ instruction_t opcode_list[] = {
 	{"mul", mul},
 	{"div", _div},
 	{"mod", mod},
+	{"pchar", pchar},
+	{"pstr", pstr},
+	{"rotl", rotl},
+	{"rotr", rotr},
 	{"stack", stk},
 	{"queue", que},
 };
