@@ -38,5 +38,4 @@ void readfile(FILE *fp)
 			get_opcode(opcode, &stack, line_n);
 		}
 	}
-	free_stack(stack);
 }
