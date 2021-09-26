@@ -29,7 +29,7 @@ void readfile(FILE *fp)
 			push_value = strtok(NULL, DELIM);
 			if (push_validate(push_value, line_n) == true)
 			{
-				push_int = atol(push_value);
+				push_int = atoi(push_value);
 				push(&stack, line_n, push_int);
 			}
 		}
