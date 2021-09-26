@@ -18,7 +18,7 @@ void stk(stack_t **stack, unsigned int n)
  * @n: line num of .m
  *
  */
-void que(stack_t **stack, unsigned int n)
+void queue(stack_t **stack, unsigned int n)
 {
 	glovar_t.stackorqueue = 1;
 

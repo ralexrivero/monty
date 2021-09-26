@@ -27,11 +27,11 @@ instruction_t opcode_list[] = {
 	{"pstr", pstr},
 	{"rotl", rotl},
 	{"rotr", rotr},
+	{"queue", queue},
 	{"stack", stk},
-	{"queue", que},
 };
 
-int size = sizeof(opcode_list) / sizeof(instruction_t) - 1;
+int size = sizeof(opcode_list) / sizeof(instruction_t);
 while (i < size)
 {
 	if (strcmp(opcode, opcode_list[i].opcode) == 0)

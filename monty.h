@@ -74,7 +74,7 @@ void rotr(stack_t **stack, unsigned int line);
 void pchar(stack_t **stack, unsigned int n);
 void pstr(stack_t **stack, unsigned int n);
 void stk(stack_t **stack, unsigned int n);
-void que(stack_t **stack, unsigned int n);
+void queue(stack_t **stack, unsigned int n);
 
 
 #endif /* MONTY_H */
