@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * f_rotl - rotates the stack
+ * rotl - rotates the stack to the top
  * @stack: double linked list head
  * @line: line of code of .m file
  **/
@@ -35,7 +35,7 @@ void rotl(stack_t **stack, unsigned int line)
 	}
 }
 /**
- * f_rotr - rotates the stack to the bottom
+ * rotr - rotates the stack to the bottom
  * @stack: double linked list pointer to head
  * @line: line of code of .m file
  **/

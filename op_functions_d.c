@@ -28,7 +28,7 @@ void pchar(stack_t **stack, unsigned int n)
 }
 /**
  * pstr - prints the string starting at the top of the stack
- * @s: pointer to stack
+ * @stack: pointer to stack
  * @n: line number
  *
  */

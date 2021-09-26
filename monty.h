@@ -42,10 +42,7 @@ typedef struct instruction_s
 
 /**
  * struct glovar - global variable structs
- * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
- *
+ * @stackorqueue: value to switch between modes
  * Description: global variables to switch mode
  */
 struct glovar
