@@ -18,7 +18,7 @@ void f_rotl(stack_t **stack, unsigned int line)
 		if (!new)
 		{
 			fprintf(stderr, "Error: malloc failed\n");
-/* 			free_stack(stack); */
+/*			free_stack(stack); */
 			exit(EXIT_FAILURE);
 		}
 		tmp = *stack;
@@ -52,7 +52,7 @@ void f_rotr(stack_t **stack, unsigned int line)
 		if (!new)
 		{
 			fprintf(stderr, "Error: malloc failed\n");
-/* 			free_stack(stack); */
+/*			free_stack(stack); */
 			exit(EXIT_FAILURE);
 		}
 		new->prev = NULL;

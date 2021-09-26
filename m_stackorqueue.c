@@ -1,7 +1,7 @@
 #include "monty.h"
 /**
- * stack - change to a stack (LIFO, default)
- * @s: pointer to stack
+ * stk - change to a stack (LIFO, default)
+ * @stack: pointer to stack
  * @n: line num of .m
  *
  */
@@ -13,8 +13,8 @@ void stk(stack_t **stack, unsigned int n)
 	(void) n;
 }
 /**
- * queue - change to a queue (FIFO)
- * @s: pointer to stack
+ * que - change to a queue (FIFO)
+ * @stack: pointer to stack
  * @n: line num of .m
  *
  */
