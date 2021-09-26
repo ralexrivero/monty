@@ -85,5 +85,5 @@ void pop(stack_t **stack, unsigned int line)
 	}
 	tmp = (*stack)->next;
 	*stack = tmp;
-	free(stack);
+/*	free(stack); */
 }
