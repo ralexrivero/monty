@@ -13,7 +13,7 @@ void stk(stack_t **stack, unsigned int line_number)
 	(void) line_number;
 }
 /**
- * que - change to a queue (FIFO)
+ * queue - change to a queue (FIFO)
  * @stack: pointer to stack
  * @line_number: line num of .m
  *

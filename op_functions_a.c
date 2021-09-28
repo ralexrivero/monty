@@ -5,11 +5,11 @@
  * @line_number: line number of .m file
  * @push_value: value to push
  */
-void push(stack_t **stack, unsigned int line, int push_value)
+void push(stack_t **stack, unsigned int line_number, int push_value)
 {
 	stack_t *new_node;
 
-	(void)line;
+	(void)line_number;
 
 	if (!stack)
 	{
