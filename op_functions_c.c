@@ -2,15 +2,15 @@
 /**
  * rotl - rotates the stack to the top
  * @stack: double linked list head
- * @line: line of code of .m file
+ * @line_number: line of code of .m file
  **/
-void rotl(stack_t **stack, unsigned int line)
+void rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp, *new;
 	unsigned int temp;
 	int len = 0;
 
-	(void)line;
+	(void)line_number;
 	len = lililen(stack);
 	if (*stack != NULL && len >= 2)
 	{
@@ -37,14 +37,14 @@ void rotl(stack_t **stack, unsigned int line)
 /**
  * rotr - rotates the stack to the bottom
  * @stack: double linked list pointer to head
- * @line: line of code of .m file
+ * @line_number: line of code of .m file
  **/
-void rotr(stack_t **stack, unsigned int line)
+void rotr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = NULL, *new = NULL;
 	int len = 0;
 
-	(void)line;
+	(void)line_number;
 	len = lililen(stack);
 	if (*stack != NULL && len >= 2)
 	{

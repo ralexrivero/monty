@@ -2,7 +2,7 @@
 /**
  * push - Adds a new node at the beginning of a stack_t list.
  * @stack: pointer to stack
- * @line: line number of .m file
+ * @line_number: line number of .m file
  * @push_value: value to push
  */
 void push(stack_t **stack, unsigned int line, int push_value)
@@ -33,13 +33,13 @@ void push(stack_t **stack, unsigned int line, int push_value)
 /**
  * pall - Function that prints all the elements of a stack_t list.
  * @stack: pointer to the head of the stack_t list
- * @line: line number of .m file
+ * @line_number: line number of .m file
  * Return: Number of nodes
  */
-void pall(stack_t **stack, unsigned int line)
+void pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
-	(void)line;
+	(void)line_number;
 
 	while (tmp)
 	{
@@ -49,18 +49,18 @@ void pall(stack_t **stack, unsigned int line)
 }
 /**
  * pint - Function that prints the value at the top of the stack.
- * @line: node value
+ * @line_number: node value
  * @stack: pointer to the head of the stack_t list
  */
-void pint(stack_t **stack, unsigned int line)
+void pint(stack_t **stack, unsigned int line_number)
 {
 	int value;
 
-	(void)line;
+	(void)line_number;
 
 	if (!stack || !*stack)
 	{
-		fprintf(stderr, "L%d: can't pint, stack empt\n", line);
+		fprintf(stderr, "L%d: can't pint, stack empt\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	value = (*stack)->n;
@@ -69,17 +69,17 @@ void pint(stack_t **stack, unsigned int line)
 /**
  * pop - deletes the node at the top of te stack
  * @stack: A pointer to the head of the stack_t.
- * @line: index of the node that should be deleted.
+ * @line_number: index of the node that should be deleted.
  */
-void pop(stack_t **stack, unsigned int line)
+void pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
 
-	(void)line;
+	(void)line_number;
 
 	if (*stack == NULL || stack == NULL)
 	{
-		fprintf(stderr, "L%d: can't pop an empty stack\n", line);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", line_number);
 		free(*stack);
 		exit(EXIT_FAILURE);
 	}

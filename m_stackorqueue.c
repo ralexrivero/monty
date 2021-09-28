@@ -2,26 +2,26 @@
 /**
  * stk - change to a stack (LIFO, default)
  * @stack: pointer to stack
- * @n: line num of .m
+ * @line_number: line num of .m
  *
  */
-void stk(stack_t **stack, unsigned int n)
+void stk(stack_t **stack, unsigned int line_number)
 {
 	glovar_t.stackorqueue = 0;
 
 	(void) stack;
-	(void) n;
+	(void) line_number;
 }
 /**
  * que - change to a queue (FIFO)
  * @stack: pointer to stack
- * @n: line num of .m
+ * @line_number: line num of .m
  *
  */
-void queue(stack_t **stack, unsigned int n)
+void queue(stack_t **stack, unsigned int line_number)
 {
 	glovar_t.stackorqueue = 1;
 
 	(void) stack;
-	(void) n;
+	(void) line_number;
 }
